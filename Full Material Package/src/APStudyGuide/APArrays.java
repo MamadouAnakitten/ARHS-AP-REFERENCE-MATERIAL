@@ -16,12 +16,12 @@ public class APArrays {
 
     public void arrayTraversal() {
         /*
-         * Array traversing is something that everyone does. You have done it, I have done it, and there are many
-         * ways TO do it. Here are some ways you can traverse an array.
-         *
-         * The first way you can traverse an array is with a good old for-each loop. Since array's are really just
-         * collections of objects, you can easily search for objects, or information like quantities like this...
-         * */
+           Array traversing is something that everyone does. You have done it, I have done it, and there are many
+           ways TO do it. Here are some ways you can traverse an array.
+
+           The first way you can traverse an array is with a good old for-each loop. Since array's are really just
+           collections of objects, you can easily search for objects, or information like quantities like this...
+           */
 
         //Find all the even numbers in the data.
         int evens = 0;
@@ -31,22 +31,22 @@ public class APArrays {
         //System.out.println(evens);
 
         /*
-         * Another way that you can search an array is by index. Say you wanted to change every other value in an array
-         * to zero, like if the data array was a lottery and you wanted 50/50 odds of getting a 0, you could do it like
-         * this:
-         * */
+           Another way that you can search an array is by index. Say you wanted to change every other value in an array
+           to zero, like if the data array was a lottery and you wanted 50/50 odds of getting a 0, you could do it like
+           this:
+           */
         //For every other value in data, assign 0.
         for(int i = 0; i < data.length; i += 2) {
             data[i] = 0;
         }
 
         /*
-         * You should also note that arrays, when passed as arguments, pass the actual reference to the array, so all of
-         * the information in that array can be accessed, and modified. If you wanted to actually pass a copy, you would
-         * have to make a deep copy. Which copies all data from the array to another new array.
-         *
-         * You can easily make a copy of an array by doing (arr.clone());
-         * */
+           You should also note that arrays, when passed as arguments, pass the actual reference to the array, so all of
+           the information in that array can be accessed, and modified. If you wanted to actually pass a copy, you would
+           have to make a deep copy. Which copies all data from the array to another new array.
+
+           You can easily make a copy of an array by doing (arr.clone());
+           */
         Cheese[] cheeseClone = cheeses.clone();
         int[] dataClone = data.clone();
 
@@ -61,17 +61,17 @@ public class APArrays {
 
     public void twoDimensionalArrays() {
         /*
-        * Two dimensional arrays will definitely be tested in the AP Java subset and you should
-        * most certainly know how to use them, and how to operate them. There is some moodle reading on
-        * multi-dimensional arrays, but here I will try to condense the information and show throughout examples
-        * of multi-dimensional arrays.
-        *
-        * Two dimensional arrays have varying usages and when you will need them will vary, but when you /could/ use
-        * them may suprise you in frequency. They are most helpful in solving matrices (if you have done pre-calculus or
-        * calculus and understand why you would need a matrix) and organizing graphical problems and information.
-        *
-        * Two dimensional arrays look like this:
-        * */
+          Two dimensional arrays will definitely be tested in the AP Java subset and you should
+          most certainly know how to use them, and how to operate them. There is some moodle reading on
+          multi-dimensional arrays, but here I will try to condense the information and show throughout examples
+          of multi-dimensional arrays.
+
+          Two dimensional arrays have varying usages and when you will need them will vary, but when you /could/ use
+          them may suprise you in frequency. They are most helpful in solving matrices (if you have done pre-calculus or
+          calculus and understand why you would need a matrix) and organizing graphical problems and information.
+
+          Two dimensional arrays look like this:
+          */
 
         int[][] greyscaleValues ={{234, 14, 64, 117, 82},
                                   {23, 35, 15, 153, 34},
@@ -79,9 +79,9 @@ public class APArrays {
                                   {223, 232, 42, 54, 124},
                                   {43, 15, 164, 122, 31}};
         /*
-        * The values above could serve the purpose of the variable name. They could represent a greyscale value to
-        * paint some pixels! We could rename the array and it would show a whole new purpose.
-        * */
+          The values above could serve the purpose of the variable name. They could represent a greyscale value to
+          paint some pixels! We could rename the array and it would show a whole new purpose.
+          */
 
         int[][] weeklySales ={{234, 14, 64, 117, 82},
                 {23, 35, 15, 153, 34},
@@ -90,13 +90,13 @@ public class APArrays {
                 {43, 15, 164, 122, 31}};
 
         /*
-        * Now the array represents the amount of sales from Monday to Friday for five weeks. A VERY IMPORTANT aspect of
-        * two-dimensional arrays that is crucial to know is that 2-D arrays, that is very obvious, but easy to forget,
-        * is that they are an array of arrays! So you can split this into five arrays and perform other array operations
-        * on them. They can also be called into a loop like so:
-        *
-        * (Erase the comment bellow to see output!)
-        * */
+          Now the array represents the amount of sales from Monday to Friday for five weeks. A VERY IMPORTANT aspect of
+          two-dimensional arrays that is crucial to know is that 2-D arrays, that is very obvious, but easy to forget,
+          is that they are an array of arrays! So you can split this into five arrays and perform other array operations
+          on them. They can also be called into a loop like so:
+
+          (Erase the comment bellow to see output!)
+          */
         int totalSalesForTheWeek = 0;
         int counter = 1;
 
@@ -110,14 +110,14 @@ public class APArrays {
         }
 
         /*
-        * You can see now that two-dimensional arrays could be quite useful! Three-dimensional arrays would be the
-        * logical next step in array knowledge, but it begins to become pretty intense to think about! But they, also,
-        * serve a purpose, but luckily you will not be tested on them, and will probably rarely, if ever, use one unless
-        * you are doing some serious mathematic / graphical data processing.
-        *
-        * One last thing is that, you can access two-dimensional arrays in two ways, you can use the "enhanced loop"
-        * above (that is what it is called), or you can use a traditional counter loop like below:
-        * */
+          You can see now that two-dimensional arrays could be quite useful! Three-dimensional arrays would be the
+          logical next step in array knowledge, but it begins to become pretty intense to think about! But they, also,
+          serve a purpose, but luckily you will not be tested on them, and will probably rarely, if ever, use one unless
+          you are doing some serious mathematic / graphical data processing.
+
+          One last thing is that, you can access two-dimensional arrays in two ways, you can use the "enhanced loop"
+          above (that is what it is called), or you can use a traditional counter loop like below:
+          */
         totalSalesForTheWeek = 0;
 
         for(int week = 0; week < weeklySales.length /* Note that this returns how many arrays there are! */; week++) {
@@ -130,9 +130,9 @@ public class APArrays {
         }
 
         /*
-        * Both methods will return the same number and were completed in roughly the same amount of code. The latter,
-        * does; however, require less code since it does not need to use the counter.
-        * */
+          Both methods will return the same number and were completed in roughly the same amount of code. The latter,
+          does; however, require less code since it does not need to use the counter.
+          */
     }
 
     private static int[] cleanArray(int[] arr) {
