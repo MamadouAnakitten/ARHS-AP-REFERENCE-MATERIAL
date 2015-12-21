@@ -29,21 +29,21 @@ import java.util.Random;
 public class APFundamentals {
 
     /*
-     * Private: Only this class has access to this variable / method / class.
-     *
-     * Protected: This class, this package, and all subclasses of this class have access to this variable / method / class.
-     *
-     * Public: All members of all classes in and out of this package have access to this variable / method / class.
-     *
-     * Privatization / Implementation Hiding is a practice that is performed to ensure that no matter what updates come to the code,
-     * anything that relies on the code of the private variable won't have to change. This is also used as a control to control what variables
-     * should be able to and shouldn't be able to be modified or accessed.
-     *
-     * For instance, if you only use a variable inside of a class, and no other classes have any use for it, you should declare
-     * it as private. This makes it easier for everyone, you, and the people that may use your code.
-     *
-     * NOTE: ALL CLASSES IN AP JAVA SUBSET ARE PUBLIC.
-     *  */
+       Private: Only this class has access to this variable / method / class.
+
+       Protected: This class, this package, and all subclasses of this class have access to this variable / method / class.
+
+       Public: All members of all classes in and out of this package have access to this variable / method / class.
+
+       Privatization / Implementation Hiding is a practice that is performed to ensure that no matter what updates come to the code,
+       anything that relies on the code of the private variable won't have to change. This is also used as a control to control what variables
+       should be able to and shouldn't be able to be modified or accessed.
+
+       For instance, if you only use a variable inside of a class, and no other classes have any use for it, you should declare
+       it as private. This makes it easier for everyone, you, and the people that may use your code.
+
+       NOTE: ALL CLASSES IN AP JAVA SUBSET ARE PUBLIC.
+       */
 
     public double d = Double.MAX_VALUE;
 

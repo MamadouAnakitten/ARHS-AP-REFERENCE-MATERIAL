@@ -60,6 +60,37 @@ public class Fraction {
         isErrored = false;
     }
 
+    /*
+        Try writing some of these methods yourself!
+        (Note) Pow is exponentiation. root is rooting a number to the nth power.
+     */
+
+    public void add(Fraction frac) {
+
+    }
+
+    public void sub(Fraction frac) {
+
+    }
+
+    public void div(Fraction frac) {
+
+    }
+
+    public void mult(Fraction frac) {
+
+    }
+
+    public void pow(double power) {
+
+    }
+
+    public void root(double root) {
+
+    }
+
+
+
     /**
      * Protected method passed down to be overridden. Simplifies the fraction at hand. Includes strange event handling.
      */

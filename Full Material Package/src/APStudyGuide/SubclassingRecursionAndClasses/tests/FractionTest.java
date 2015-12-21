@@ -80,4 +80,34 @@ public class FractionTest {
     public void testToMixedNumber() throws Exception {
 
     }
+
+    @org.junit.Test
+    public void testAdd() throws Exception {
+
+    }
+
+    @org.junit.Test
+    public void testSubtract() throws Exception {
+
+    }
+
+    @org.junit.Test
+    public void testDivide() throws Exception {
+
+    }
+
+    @org.junit.Test
+    public void testMultiply() throws Exception {
+
+    }
+
+    @org.junit.Test
+    public void testPower() throws Exception {
+
+    }
+
+    @org.junit.Test
+    public void testRoot() throws Exception {
+
+    }
 }
